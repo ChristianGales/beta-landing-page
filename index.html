@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Bettaa Overload</title>
+    </head>
+    <body>
+        <div class="container">
+           <div class="navbar">
+               <img src="img/logo.png" class="logo">
+               <nav>
+                   <ul id="menuList">
+                        <li><a href="#">Fish</a></li>
+                        <li><a href="#">Foods</a></li>
+                        <li><a href="#">Accesorries</a></li>
+                        <li><a href="#">others</a></li>
+                   
+                   </ul>
+               </nav>
+               <img src="img/menu.png" class="menu-icon" onclick="togglemenu()">
+           </div>
+            <div class="row">
+                <div class="col-1"> 
+                    <h2>Betta <br>Overload</h2>
+                    <h3>Betta Fish Certified Breader</h3>
+                    <p>(Pet/Show Quality)</p>
+                    <button type="button">Enter Shop<img src="img/arrow.png"></button>
+                </div>
+                <div class="col-2"> 
+                    <img src="img/1.png" class="betta">
+                    <div class="color-box">
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <img src="img/fb.png">
+                <img src="img/tw.png">
+                <img src="img/ig.png">
+            </div>
+        </div>
+        
+        <script>
+                
+            var menuList = document.getElementById("menuList");
+            
+            menuList.style.maxHeight = "0px";
+            
+            function togglemenu(){
+                
+                if(menuList.style.maxHeight = "0px")
+                    {
+                        menuList.style.maxHeight = "130px";
+                    }
+                else
+                    {
+                        menuList.style.maxHeight = "0px";
+                    }
+            }
+        
+        </script>
+        
+    </body>
+</html>
